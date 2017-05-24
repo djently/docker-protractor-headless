@@ -7,7 +7,7 @@ RUN npm install -g protractor@4.0.14 mocha@3.2.0 jasmine@2.5.3 minimist@1.2.0 &&
     node ./webdriver-versions.js --chromedriver 2.27 && \
     webdriver-manager update && \
     apt-get update && \
-    apt-get install -y xvfb wget openjdk-7-jre && \
+    apt-get install -y xvfb wget openjdk-7-jre git && \
     wget https://github.com/webnicer/chrome-downloads/raw/master/x64.deb/${CHROME_PACKAGE} && \
     dpkg --unpack ${CHROME_PACKAGE} && \
     apt-get install -f -y && \
